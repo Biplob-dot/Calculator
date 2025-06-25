@@ -48,6 +48,7 @@ body{
     flex-grow: 1;
     align-self: center;
     padding: 1rem;
+    font-size: 1.5rem;
 }
 
 #inputBtnsLowerContainer{
@@ -58,4 +59,10 @@ body{
 
 .inputBtn{
     width:25%
+}
+
+#displayScreen{
+    align-content: center;
+    text-align: right;
+    font-size: 3.5rem;
 }
