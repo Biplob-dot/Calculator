@@ -11,8 +11,42 @@ body{
     height: 100vh;
 }
 
+div{
+    border: 2px black solid;
+}
+
 #calculatorContainer{
     border: 2px black solid;
-    width: 60%;
+    width: 40%;
     height: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+#displayScreen{
+    height: 25%;
+}
+
+#inputBtnsContainer{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+#inputBtnsUpperContainer{
+    height: 20%;
+    display: flex;
+}
+
+#inputBtnsLowerContainer{
+    display: flex;
+    flex-grow: 1;
+    flex-wrap: wrap;
+}
+
+#calculatorName{
+    flex-grow: 1;
+}
+.inputBtn{
+    width:25%
 }
