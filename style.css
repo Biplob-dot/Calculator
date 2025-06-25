@@ -11,9 +11,9 @@ body{
     height: 100vh;
 }
 
-div{
+/* div{
     border: 2px black solid;
-}
+} */
 
 #calculatorContainer{
     border: 2px black solid;
@@ -23,8 +23,14 @@ div{
     flex-direction: column;
 }
 
-#displayScreen{
+#displayScreenContainer{
     height: 25%;
+    padding: 1rem;
+}
+
+#displayScreen{
+    border: 2px black solid;
+    height: 100%;
 }
 
 #inputBtnsContainer{
@@ -38,15 +44,18 @@ div{
     display: flex;
 }
 
+#calculatorName{
+    flex-grow: 1;
+    align-self: center;
+    padding: 1rem;
+}
+
 #inputBtnsLowerContainer{
     display: flex;
     flex-grow: 1;
     flex-wrap: wrap;
 }
 
-#calculatorName{
-    flex-grow: 1;
-}
 .inputBtn{
     width:25%
 }
