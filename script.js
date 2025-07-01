@@ -91,33 +91,44 @@ zero.addEventListener("click", () => {
 addBtn.addEventListener("click", () => {
     operator = "add";
     num1 = parseInt(outputBufferArray.join(""));
-    console.log(num1);
     displayBufferArray.push("+");
     displayScreen.textContent = displayBufferArray.join("");
     outputBufferArray = [];
 })
 subBtn.addEventListener("click", () => {
+    operator = "sub";
+    num1 = parseInt(outputBufferArray.join(""));
     displayBufferArray.push("-");
     displayScreen.textContent = displayBufferArray.join("");
+    outputBufferArray = [];
 })
 productBtn.addEventListener("click", () => {
+    operator = "product";
+    num1 = parseInt(outputBufferArray.join(""));
     displayBufferArray.push("*");
     displayScreen.textContent = displayBufferArray.join("");
+    outputBufferArray = [];
 })
 divideBtn.addEventListener("click", () => {
+    operator = "division";
+    num1 = parseInt(outputBufferArray.join(""));
     displayBufferArray.push("/");
     displayScreen.textContent = displayBufferArray.join("");
+    outputBufferArray = [];
 })
 decimalBtn.addEventListener("click", () => {
     displayBufferArray.push(".");
+    outputBufferArray.push(".");
     displayScreen.textContent = displayBufferArray.join("");
 })
 resultOperatorBtn.addEventListener("click", () => {
     num2 = parseInt(outputBufferArray.join(""));
-    console.log(num2);
     displayBufferArray = [];
     outputBufferArray = [];
     displayScreen.textContent = operate(num1,num2,operator);
+    num1 = operate(num1,num2,operator);
+    displayBufferArray.push(num1);
+    outputBufferArray.push(num1);
 })
 
 let operate = (num1,num2,operator) => {

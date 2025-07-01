@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: white;
 }
 
 body{
@@ -9,6 +10,8 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh;
+    background: #EDEEC0; /* cream color background */
+    /* background: #BCB88A; Sage color background */
 }
 
 /* div{
@@ -16,9 +19,10 @@ body{
 } */
 
 #calculatorContainer{
-    border: 2px black solid;
-    width: 40%;
-    height: 60%;
+    border-radius: 20px;
+    background-color: black;
+    width: 330px;
+    height: 550px;
     display: flex;
     flex-direction: column;
 }
@@ -29,14 +33,17 @@ body{
 }
 
 #displayScreen{
-    border: 2px black solid;
+    background-color: #3f3b3b;
+    border-radius: 18px;
     height: 100%;
+    padding: 18px;
 }
 
 #inputBtnsContainer{
     flex-grow: 1;
     display: flex;
     flex-direction: column;
+    padding: 10px;
 }
 
 #inputBtnsUpperContainer{
@@ -48,7 +55,7 @@ body{
     flex-grow: 1;
     align-self: center;
     padding: 1rem;
-    font-size: 1.5rem;
+    font-size: 125%;
 }
 
 #inputBtnsLowerContainer{
@@ -57,12 +64,31 @@ body{
     flex-wrap: wrap;
 }
 
-.inputBtn{
-    width:25%
+.inputBtnContainer{
+    width: 25%;
+    padding: 3px;
+}
+.inputBtns{
+    all: unset;      
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    border: none;
+    font-size: 25px;
+    text-align: center;
+}
+.inputBtnNumbers{
+    background-color: #1C1C1C;
+}
+.inputBtnFuntions{
+    background-color: #505050;
+}
+.inputBtnOperators{
+    background-color: #FF9500;
 }
 
 #displayScreen{
     align-content: center;
     text-align: right;
-    font-size: 3.5rem;
+    font-size: 3rem;
 }
