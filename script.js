@@ -90,28 +90,28 @@ zero.addEventListener("click", () => {
 })
 addBtn.addEventListener("click", () => {
     operator = "add";
-    num1 = parseInt(outputBufferArray.join(""));
+    num1 = parseFloat(outputBufferArray.join(""));
     displayBufferArray.push("+");
     displayScreen.textContent = displayBufferArray.join("");
     outputBufferArray = [];
 })
 subBtn.addEventListener("click", () => {
     operator = "sub";
-    num1 = parseInt(outputBufferArray.join(""));
+    num1 = parseFloat(outputBufferArray.join(""));
     displayBufferArray.push("-");
     displayScreen.textContent = displayBufferArray.join("");
     outputBufferArray = [];
 })
 productBtn.addEventListener("click", () => {
     operator = "product";
-    num1 = parseInt(outputBufferArray.join(""));
+    num1 = parseFloat(outputBufferArray.join(""));
     displayBufferArray.push("*");
     displayScreen.textContent = displayBufferArray.join("");
     outputBufferArray = [];
 })
 divideBtn.addEventListener("click", () => {
     operator = "division";
-    num1 = parseInt(outputBufferArray.join(""));
+    num1 = parseFloat(outputBufferArray.join(""));
     displayBufferArray.push("/");
     displayScreen.textContent = displayBufferArray.join("");
     outputBufferArray = [];
@@ -122,7 +122,7 @@ decimalBtn.addEventListener("click", () => {
     displayScreen.textContent = displayBufferArray.join("");
 })
 resultOperatorBtn.addEventListener("click", () => {
-    num2 = parseInt(outputBufferArray.join(""));
+    num2 = parseFloat(outputBufferArray.join(""));
     displayBufferArray = [];
     outputBufferArray = [];
     displayScreen.textContent = operate(num1,num2,operator);
